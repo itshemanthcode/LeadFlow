@@ -125,7 +125,7 @@ export default function LeadManagement({ leads, onLeadSelect, onLeadUpdate }: Le
           <div className="text-3xl font-bold text-blue-600 group-hover:scale-105 transition-transform">{myLeads.length}</div>
         </div>
         <div className="bg-gradient-to-br from-white to-green-50/30 rounded-2xl border border-green-200/50 p-6 shadow-soft card-hover group">
-          <div className="text-sm text-gray-600 mb-2 font-medium">Today's Follow-ups</div>
+          <div className="text-sm text-gray-600 mb-2 font-medium">Today&apos;s Follow-ups</div>
           <div className="text-3xl font-bold text-green-600 group-hover:scale-105 transition-transform">{todayFollowUps.length}</div>
         </div>
         <div className="bg-gradient-to-br from-red-50 to-red-100/50 rounded-2xl border border-red-200 p-6 shadow-soft card-hover group">
@@ -160,7 +160,7 @@ export default function LeadManagement({ leads, onLeadSelect, onLeadUpdate }: Le
               : 'text-gray-600 hover:text-gray-900'
           )}
         >
-          Today's Follow-ups ({todayFollowUps.length})
+          Today&apos;s Follow-ups ({todayFollowUps.length})
         </button>
         <button
           onClick={() => setSelectedSection('tasks')}
@@ -277,7 +277,7 @@ export default function LeadManagement({ leads, onLeadSelect, onLeadUpdate }: Le
         {selectedSection === 'followups' && (
           <div className="p-6">
             <div className="mb-4">
-              <h2 className="text-lg font-semibold text-gray-900">Today's Follow-ups</h2>
+              <h2 className="text-lg font-semibold text-gray-900">Today&apos;s Follow-ups</h2>
               <p className="text-sm text-gray-600 mt-1">Leads that require follow-up action today</p>
             </div>
             <div className="space-y-3">
